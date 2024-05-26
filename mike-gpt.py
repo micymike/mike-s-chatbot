@@ -7,8 +7,9 @@ st.set_page_config(page_title="Mike's Chatbot")
 
 # Sidebar setup
 with st.sidebar:
-    st.title("Mike's Chatbot")
-    replicate_api = st.text_input('Enter Replicate API Key:', type='password')
+    st.title("Health Bot Chatbot")
+    st.write("copy this key to use me: r8_e0KvZnPNsXfUGERF0r2wpmMBYdxBDql3QuTtk")
+    replicate_api = st.text_input('Enter Replicate API Key: ', type='password')
 
     if replicate_api.startswith('r8_') and len(replicate_api) == 40:
         st.success('Feel free to enter your prompt!', icon='✅')
